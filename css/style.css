@@ -1,6 +1,7 @@
 
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 
@@ -23,7 +24,6 @@ header {
 .slider--width {
     height: 100%;
     display: flex;
-    width: calc(100vw * 3);
     transition: all ease 0.3s;
 }
 .slider--item {
@@ -31,4 +31,20 @@ header {
     height: inherit;
     background-position: center;
     background-size: cover;
+}
+.slider--controls {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider--control {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
 }
